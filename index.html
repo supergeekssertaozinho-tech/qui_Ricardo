@@ -349,15 +349,6 @@
     </div>
 
     <script>
-        const modal = document.getElementById("modal");
-
-        function openModal() {
-            modal.classList.add("active");
-            modal.onclick = (e) => {
-                if (e.target === modal) modal.classList.remove("active");
-            };
-        }
-
         // Partículas caindo
         function criarParticula() {
             const p = document.createElement("div");
