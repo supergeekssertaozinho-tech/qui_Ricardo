@@ -378,6 +378,24 @@
         document.querySelector("button").addEventListener("click", () => {
             window.open("https://gd.games/instant-builds/f7dfc211-984b-410c-a93d-c0ccb4c11393", "_blank");
         });
+
+        function openModal(card) {
+            const img = card.querySelector('img')
+
+            const modal = document.createElement('div')
+            modal.className = 'modal'
+
+            const modalImg = document.createElement('img')
+            modalImg.src = img.src
+
+            modal.appendChild(modalImg)
+            document.body.appendChild(modal)
+
+            // Fecha ao clicar
+            modal.addEventListener('click', () => {
+                modal.remove()
+            })
+        }
     </script>
 
 </body>
